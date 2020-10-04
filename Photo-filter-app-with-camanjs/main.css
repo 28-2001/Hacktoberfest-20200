@@ -1,0 +1,31 @@
+body {
+    background: #002b36;
+}
+
+h1 {
+    margin: 0;
+}
+
+.my-container {
+    width: 95%;
+    margin: 0  auto;
+}
+
+#canvas {
+    width: 100%;
+    background: #ececec;
+    border-radius: 6px;
+}
+
+.btn-group, .filter-btn, .editbtn {
+    width: 100%;
+}
+.btn.btn-primary.first, .btn.btn-primary.last {
+    width: 20%;
+}
+.btn-group .btn-success.middle.disabled {
+    width: 60%;
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.15em;
+}
+

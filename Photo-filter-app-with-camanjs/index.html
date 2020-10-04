@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Filter App</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">PHOTO FILTER</a>
+        </div>
+    </nav>
+
+    <div class="container my-2 my-md-3">
+        <div class="row justify-content-center">
+            <div class="col col-0 col-md-2"></div>
+            <div class="col col-12 col-md-8">
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-0 col-md-2"></div>
+        </div>                                                         <!-- row 1 ends -->
+
+
+        <div class="row justify-content-center">
+            <div class="col col-0 col-md-2"></div>
+            <div class="col col-12 col-md-8">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="col col-0 col-md-2"></div>
+        </div>                                                         <!--row 2 ends-->
+
+        <div class="row justify-content-center mt-3">
+            <div class="col col-6 col-md-3 mb-2">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="filter-btn brightness-remove btn btn-primary first">-</button>
+                    <button type="button" class="btn btn-success middle disabled" disabled>Bright</button>
+                    <button type="button" class="filter-btn brightness-add btn btn-primary last">+</button>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3 mb-2">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="filter-btn contrast-remove btn btn-primary first">-</button>
+                    <button type="button" class="btn btn-success middle disabled" disabled>Contrast</button>
+                    <button type="button" class="filter-btn contrast-add btn btn-primary last">+</button>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3 mb-2">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="filter-btn saturation-remove btn btn-primary first">-</button>
+                    <button type="button" class="btn btn-success middle disabled" disabled>Saturation</button>
+                    <button type="button" class="filter-btn saturation-add btn btn-primary last">+</button>
+                </div>
+            </div>
+            <div class="col col-6 col-md-3 mb-2">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="filter-btn vibrance-remove btn btn-primary first">-</button>
+                    <button type="button" class="btn btn-success middle disabled" disabled>Vibrance</button>
+                    <button type="button" class="filter-btn vibrance-add btn btn-primary last">+</button>
+                </div>
+            </div>
+        </div>                                                         <!--row 3 ends-->
+
+        <h1 class="text-center">Effects</h1>
+        <div class="row justify-content-left">
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn vintage-add btn btn-secondary">Vintage</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn lomo-add btn btn-secondary">Lomo</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn clarity-add btn btn-secondary">Clarity</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn sincity-add btn btn-secondary">Sin city</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn crossprocess-add btn btn-secondary">Cross Process</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn pinhole-add btn btn-secondary">Pinhole</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn nostalgia-add btn btn-secondary">Nostalgia</div>
+            </div>
+            <div class="col col-4 col-md-3 mt-2 mt-md-3">
+                <div class="filter-btn hermajesty-add btn btn-secondary">Her Majesty</div>
+            </div>
+        </div>                                                         <!-- row 4 ends -->
+
+        <div class="row justify-content-center mt-3">
+            <div class="col col-12 col-md-6 mb-2">
+                <div id="download-btn" class="btn btn-info editbtn">Download Image</div>
+            </div>
+            <div class="col col-12 col-md-6">
+                <div id="revert-btn" class="btn btn-danger editbtn">Remove Filters</div>
+            </div>
+        </div>                                                        <!-- row 5 ends -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
