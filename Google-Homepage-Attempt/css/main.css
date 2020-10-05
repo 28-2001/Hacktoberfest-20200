@@ -1,0 +1,197 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: 100%;
+
+    /*display: flex; 
+    flex-direction: column; */
+}
+.container {
+    margin-top: 96px;
+}
+.overall-header {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#header-left {
+    margin-top: 10;
+    padding-left: 15px;
+}
+.header-left-content {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    color: #222;
+    opacity: 0.75;
+    margin: 7px 0 0 10px;
+}
+.header-left-content:hover {
+    text-decoration: underline;
+}
+#header-right {
+    display: flex;
+    text-align: right;
+    float: right;
+    margin-right: 30px;
+   
+}
+.header-right-content {
+    font-size: 13px;
+    color: #222;
+    opacity: 0.75;
+    text-decoration: none;
+    margin: 7px 0 0 10px;
+    padding-right: 10px;
+}
+.header-right-content:hover {
+    text-decoration: underline;
+}
+.i.material-icons {
+    padding: 0 0 0 15px;
+    size: 32px 32px;
+    min-width: 0;
+}
+.app-button {
+    background: none;
+    border: none;
+    margin: 0;
+    overflow: hidden;
+    min-width: 0;
+}
+.app-button:hover {
+    border: none;
+}
+.account-button {
+    background: none;
+    border: none;
+    margin: 0;
+    color: #c4302b;
+}
+.account-button:hover {
+    border: none;
+}    
+.container {
+    text-align: center;
+    padding-top: 100px;
+    /* flex: 1 0 auto; */
+}
+.Google-Logo {
+    Height: 92px;
+    Width: 272px;
+    margin-bottom: 25px;
+}
+input {
+    border: solid 1px;
+    border-radius: 24px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    width: 582px;
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 20px;
+    font-family: arial, sans-serif;
+    background-image: url('http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position-x: 570px;
+    background-position-y: 14px;
+    background-size: 23px;
+    margin-bottom: 15px;
+}
+input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+/* remove blue outline box from search */
+input:focus {
+    outline: none;
+}
+.buttons {
+    margin-bottom: 60px;
+}
+button {
+    background: #f2f2f2;
+    border: solid #f2f2f2 1px;
+    cursor: pointer;
+    color: #5F6368;
+    border-radius: 4px;
+    margin: 11px 4px;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 16px;
+    min-width: 54px;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    height: 36px;
+    line-height: 27px;
+}
+button.account-button {
+    padding: 0;
+    size: 32px 32px;
+    display: block;
+    min-width: 0;
+}
+button:hover {
+    border: solid 1px #c6c6c6;
+    color: #222;
+    box-shadow: rgba(0,0,0,0.1);
+}
+button:focus {
+    outline: 0;
+}
+.overall-fbar {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 980px;
+    /* until next comment is to keep footer in place */
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+   /* flex-shrink: 0; */
+}
+.UK-above-fbar {
+    display: block;
+    color: rgba(0,0,0,.54);
+    font-family: arial, sans-serif;
+    padding-left: 27px;
+    text-align: left;
+}
+.fbar-content {
+    padding-left: 27px;
+    margin: 0;
+    text-decoration: none;
+    color: #5f6368;
+    font-size: small;
+}
+.fbar-content:hover {
+    text-decoration: underline;
+}
+.bottom-fbar {
+    display: block;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    color: #222;
+}
+#f-right {
+    float: right;
+    margin-right: 30px;
+}
+/*.mic {
+    background:url('http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+}
+*/
