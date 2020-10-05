@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Piglatin</title>
+  <script>
+    var sentence=prompt("Enter a sentence:");
+    //document.write(sentence);
+    words=sentence.split(" ");
+
+    //document.write(words);
+    vowels=['a','e','i','o','u','A','E','I','O','U'];
+    var final_sentence="";
+    for (w of words)
+    {
+      //document.write(w);
+      //document.write(w[0]);
+      if((!vowels.includes(w[0])) && vowels.includes(w[1]))
+      {
+
+        //document.write(w.slice(1,)+w.slice(0,1)+"ay","</br>");
+        final_sentence+=(w.slice(1,)+w.slice(0,1)+"ay ");
+      }
+
+      else if((!vowels.includes(w[0])) && !vowels.includes(w[1]))
+      {
+
+        //document.write(w.slice(2,)+w.slice(0,2)+"ay","</br>");
+        final_sentence+=(w.slice(2,)+w.slice(0,2)+"ay ");
+      }
+
+      else if((vowels.includes(w[0])) && (!vowels.includes(w[1])))
+      {
+
+        //document.write(w+"way","</br>");
+        final_sentence+=(w+"way ");
+      }
+
+      else if((vowels.includes(w[0])) && vowels.includes(w[1]))
+      {
+
+        //document.write(w+"ay","</br>");
+        final_sentence+=(w+"ay ");
+      }
+    }
+    document.write(final_sentence[0].toUpperCase()+final_sentence.slice(1,).toLowerCase());
+  </script>
+
+</head>
+</html>
