@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book your Tickets</title>
+    <link rel="shortcut icon" href="images/icon.jfif">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+      <a href="https://www.keralartc.com/ticketbooking.html"><img src="images/bus.jpg" alt="bus"></a>
+    </header>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="ticket.html">E-TICKETING</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="contact.html">CONTACT US</a>
+    </nav>
+    <section id="ticket">
+      <h2>Book Your Tickets</h2>
+      <input type="text" placeholder="From" name="uname" required>
+      <input type="text" placeholder="To" name="destination" required>
+      <select class="service_type" name="bus_type">
+        <option value>Bus type</option>
+        <option value="1">Super Fast</option>
+        <option value="2">Super Express</option>
+        <option value="3">Super Deluxe</option>
+        <option value="4">Low Floor AC Volvo</option>
+        <option value="5">Silver Line Jet</option>
+        <option value="6">Low Floor Non AC</option>
+        <option value="7">Garuda Maharaja Scania</option>
+      </select>
+      <select class="times" name="timing">
+        <option value="all">Time</option>
+        <option value="morning">6AM to 12PM [Morning]</option>
+        <option value="afternoon">12PM to 6 PM [Afternoon]</option>
+        <option value="night">6PM to 6AM [Night Services]</option>
+      </select>
+      <button type="book"><a href="book.html" style="text-decoration: none;" target="_blank">BOOK</a></button>
+    </section>
+  </body>
+</html>
