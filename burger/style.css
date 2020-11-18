@@ -1,0 +1,321 @@
+/* fonts */
+@font-face {
+    font-family: Prequel;
+    src: url(fonts/PrequelDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(fonts/Gilroy-Bold.woff);
+}
+
+@font-face {
+    font-family: Gilroy-light;
+    src: url(fonts/Gilroy-Light.woff);
+}
+
+.nav-item{
+    font-family: 'Gilroy';
+    color: black !important;
+}
+
+.main-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.main-img .portada{
+    width: 100%;
+}
+
+.main-img .portada img{
+    width: 100%;
+    height: 100%;
+}
+
+.nuestra-carta, .preparacion, .caracteristicas, .nosotros-pedidos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+    width: 80%;
+}
+
+@media(max-width:992px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-gap: 10px;
+        width: 80%;
+    }
+}
+
+
+
+.grid-item img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.title-section{
+    font-family: 'Prequel';
+    font-size: 40px;
+}
+
+.text-grid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1pt solid black;
+    justify-content: center;
+    background-color: black;
+    border-radius: 6%;
+}
+
+.text-grid span{
+    font-family: 'Gilroy';
+    color: white;
+    font-size: 15px;
+}
+
+.text-grid :nth-child(1){
+    font-family: 'Prequel';
+    color: white;
+    font-size: 30px;
+}
+
+
+@media(max-width:767px){
+    .title-section{
+        font-size: 20px;
+    }
+    
+    .text-grid span{
+        font-size: 10px;
+    }
+    
+    .text-grid :nth-child(1){
+        font-size: 15px;
+    }
+}
+
+@media(max-width:767px){
+    .title-section{
+        font-size: 20px;
+    }
+    
+    .text-grid span{
+        font-size: 10px;
+    }
+    
+    .text-grid :nth-child(1){
+        font-size: 15px;
+    }
+}
+
+@media(max-width:320px){
+    .title-section{
+        font-size: 20px;
+    }
+    
+    .text-grid span{
+        font-size: 8px;
+    }
+    
+    .text-grid :nth-child(1){
+        font-size: 12px;
+    }
+
+    .preparacion{
+        height: 500px;
+    }
+}
+
+.grid-container-caracteristicas, .grid-container-nos-ped{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    width: 80%;
+}
+
+@media(max-width:992px){
+    .grid-container-caracteristicas{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 80%;
+    }
+}
+
+.grid-container-caracteristicas .img-grid{
+    border-radius: 6%;
+}
+
+.nosotros-pedidos{
+    background-color: #EFECEA;
+}
+
+.card-nos-ped{
+    background-color: #DDDBDA;
+    border-radius: 15px;
+}
+
+.card-nos-ped .encabezado{
+    height: 220px;
+    border-radius: 15px;
+}
+
+.encabezado{
+    display: flex;
+}
+
+.encabezado-wsp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: #070809;
+    border-top-left-radius: 15px;
+}
+
+.encabezado-wsp img{
+ width: 70%;
+ height: 50%;
+}
+
+.description-wsp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    font-family: 'Gilroy';
+    text-align: center;
+}
+
+.description-wsp :nth-child(1){
+    font-size: 50px;
+}
+
+.card-nos-ped .encabezado .nosotros{
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-nos-ped .description{
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.div-grid .title-div{
+    font-family: 'Prequel';
+    font-size: 40px;
+}
+
+.div-grid .title-card{
+    font-family: 'Gilroy';
+    font-size: 18px;
+}
+
+.div-grid p{
+    font-family: 'Gilroy-light';
+    font-size: 16px;
+}
+
+.footer-section{
+    background-color: #070809;
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datos-footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy';
+}
+
+.datos-footer :nth-child(3){
+    font-size: 40px;
+}
+
+.datos-footer :nth-child(4){
+    font-family: 'Gilroy-Light';
+}
+
+.logo-black{
+    width: 100px;
+    height: 100px;
+}
+
+@media(max-width:992px){
+    .grid-container-nos-ped{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 80%;
+    }
+}
+
+@media(max-width:767px){
+    .div-grid span{
+        justify-self: center;
+    }
+
+    .div-grid .title-div{
+        font-size: 30px;
+    }
+    
+    .div-grid .title-card{
+        font-size: 15px;
+        line-height: 7px;
+    }
+    
+    .div-grid p{
+        font-size: 12px;
+    }
+
+    .description-wsp :nth-child(1){
+        font-size: 30px;
+    }
+
+    .datos-footer :nth-child(3){
+        font-size: 30px;
+    }
+}
+
+@media(max-width:320px){
+    .div-grid span {
+        justify-self: center;
+    }
+
+    .div-grid .title-div{
+        font-size: 25px;
+    }
+    
+    .div-grid .title-card{
+        font-size: 12px;
+    }
+    
+    .div-grid p{
+        font-size: 10px;
+    }
+}
